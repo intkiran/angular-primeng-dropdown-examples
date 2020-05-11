@@ -8,7 +8,7 @@ import { SelectItem } from 'primeng';
 })
 export class BasicDropdownComponent implements OnInit {
   employes: SelectItem[];
-  selectedEmploye: any;
+  selectedEmploye: SelectItem;
 
   constructor() {     
     this.employes = [
