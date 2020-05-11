@@ -1,6 +1,7 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BasicDropdownComponent } from './basic-dropdown/basic-dropdown.component';
+import { OptionlabelComponent } from './optionlabel/optionlabel.component';
 
 
 
@@ -11,7 +12,7 @@ import { BasicDropdownComponent } from './basic-dropdown/basic-dropdown.componen
   imports: [
     RouterModule.forRoot([
       { path: 'basic', component: BasicDropdownComponent },
-      { path: 'other', component: BasicDropdownComponent },
+      { path: 'customlabel', component: OptionlabelComponent },
       { path: 'position', component: BasicDropdownComponent }
     ])
   ],

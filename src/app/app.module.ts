@@ -6,14 +6,15 @@ import {  ToastModule, MessageService, ButtonModule, DropdownModule } from 'prim
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app.routing.module';
 import { BasicDropdownComponent } from './basic-dropdown/basic-dropdown.component';
+import { OptionlabelComponent } from './optionlabel/optionlabel.component';
 
 
 @NgModule({
   imports:      [ AppRoutingModule,BrowserModule,BrowserAnimationsModule, DropdownModule,ButtonModule],
-  declarations: [ AppComponent, BasicDropdownComponent,],
+  declarations: [ AppComponent, BasicDropdownComponent, OptionlabelComponent,],
   bootstrap:    [ AppComponent ],
   providers:[],
-  exports:[BasicDropdownComponent],
+  exports:[],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
