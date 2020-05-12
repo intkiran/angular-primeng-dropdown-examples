@@ -1,8 +1,18 @@
 <p>
 model-driven-form works!
 </p>
+<form [formGroup]="myform" (submit)="storeUserInfo()">
+  <label for="name">Name</label>
+  <input formControlName="name" id="name" #name="ngControl" />
+  <div *ngIf="name.touched && name.hasError('required')">Required</div>
 
+  <label for="selectedRole">Select Role</label>
 <p-dropdown [options]="roles" formControlName="selectedRole"></p-dropdown> 
+  <div *ngIf="selectedRole.touched && selectedRole.hasError('selectedRole')">Invalid</div>
 
-<p>selected Role: {{selectedRole? selectedRole.name:'none' }}</p>
+
+  <button type="submit" [disabled]="!myform.valid">Submit</button>
+</form>
+
+
 
