@@ -1,6 +1,6 @@
-<p>Simple Dropdown Example</p>
+<p>Dropdown Example</p>
 
 <p-dropdown [options]="employes"   [(ngModel)]="selectedEmploye"></p-dropdown>
 
 <br>
-selectedEmploye - {{selectedEmploye}}
+<p>selected Employe: {{selectedEmploye? selectedEmploye.name:'none' }}</p>

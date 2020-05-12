@@ -8,11 +8,12 @@ import { AppRoutingModule } from './app.routing.module';
 import { BasicDropdownComponent } from './basic-dropdown/basic-dropdown.component';
 import { OptionlabelComponent } from './optionlabel/optionlabel.component';
 import { FormsModule } from '@angular/forms';
+import { RestapiComponent } from './restapi/restapi.component';
 
 
 @NgModule({
   imports:      [ AppRoutingModule,BrowserModule,BrowserAnimationsModule,FormsModule, DropdownModule,ButtonModule],
-  declarations: [ AppComponent, OptionlabelComponent ,BasicDropdownComponent, OptionlabelComponent,],
+  declarations: [ AppComponent, OptionlabelComponent ,BasicDropdownComponent, OptionlabelComponent, RestapiComponent,],
   bootstrap:    [ AppComponent ],
   providers:[],
   exports:[],
