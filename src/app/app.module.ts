@@ -7,10 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app.routing.module';
 import { BasicDropdownComponent } from './basic-dropdown/basic-dropdown.component';
 import { OptionlabelComponent } from './optionlabel/optionlabel.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
-  imports:      [ AppRoutingModule,BrowserModule,BrowserAnimationsModule, DropdownModule,ButtonModule],
+  imports:      [ AppRoutingModule,BrowserModule,BrowserAnimationsModule,FormsModule, DropdownModule,ButtonModule],
   declarations: [ AppComponent, OptionlabelComponent ,BasicDropdownComponent, OptionlabelComponent,],
   bootstrap:    [ AppComponent ],
   providers:[],
