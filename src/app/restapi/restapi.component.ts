@@ -15,7 +15,7 @@ export class RestapiComponent implements OnInit {
   ngOnInit() {
     this.countryService.getJSON().subscribe(data => {
       this.countries = data;
-      console.log(data);
+      console.log(this.countries);
     });
   }
 }
