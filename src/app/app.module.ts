@@ -11,11 +11,12 @@ import { FormsModule } from '@angular/forms';
 import { RestapiComponent } from './restapi/restapi.component';
 import { CountryService } from '../country.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
 
 
 @NgModule({
   imports:      [ AppRoutingModule,BrowserModule,BrowserAnimationsModule,FormsModule, DropdownModule,ButtonModule,HttpClientModule],
-  declarations: [ AppComponent, OptionlabelComponent ,BasicDropdownComponent, OptionlabelComponent, RestapiComponent,],
+  declarations: [ AppComponent, OptionlabelComponent ,BasicDropdownComponent, OptionlabelComponent, RestapiComponent, ModelDrivenFormComponent,],
   bootstrap:    [ AppComponent ],
   providers:[CountryService],
   exports:[],
