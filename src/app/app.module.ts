@@ -11,7 +11,7 @@ import { OptionlabelComponent } from './optionlabel/optionlabel.component';
 
 @NgModule({
   imports:      [ AppRoutingModule,BrowserModule,BrowserAnimationsModule, DropdownModule,ButtonModule],
-  declarations: [ AppComponent, BasicDropdownComponent, OptionlabelComponent,],
+  declarations: [ AppComponent, OptionlabelComponent ,BasicDropdownComponent, OptionlabelComponent,],
   bootstrap:    [ AppComponent ],
   providers:[],
   exports:[],
