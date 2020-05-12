@@ -9,13 +9,15 @@ import { BasicDropdownComponent } from './basic-dropdown/basic-dropdown.componen
 import { OptionlabelComponent } from './optionlabel/optionlabel.component';
 import { FormsModule } from '@angular/forms';
 import { RestapiComponent } from './restapi/restapi.component';
+import { CountryService } from '../country.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
-  imports:      [ AppRoutingModule,BrowserModule,BrowserAnimationsModule,FormsModule, DropdownModule,ButtonModule],
+  imports:      [ AppRoutingModule,BrowserModule,BrowserAnimationsModule,FormsModule, DropdownModule,ButtonModule,HttpClientModule],
   declarations: [ AppComponent, OptionlabelComponent ,BasicDropdownComponent, OptionlabelComponent, RestapiComponent,],
   bootstrap:    [ AppComponent ],
-  providers:[],
+  providers:[CountryService],
   exports:[],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

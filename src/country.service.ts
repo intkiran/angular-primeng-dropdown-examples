@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'; 
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class CountryService {
    constructor(private http: HttpClient) {
@@ -10,6 +10,6 @@ export class CountryService {
     }
 
     public getJSON(): Observable<any> {
-        return this.http.get("./mydata.json");
+        return this.http.get("./assets/countries.json");
     }
 }
