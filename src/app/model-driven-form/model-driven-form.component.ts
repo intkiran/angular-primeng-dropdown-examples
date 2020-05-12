@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SelectItem } from 'primeng';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-model-driven-form',
@@ -9,8 +10,10 @@ import { SelectItem } from 'primeng';
 export class ModelDrivenFormComponent implements OnInit {
  roles: SelectItem[];
   selectedRole: SelectItem;
+userForm: any;
+  constructor(private formBuilder: FormBuilder) {
+    this.userForm = this.formBuilder.group({selecteselectedRoledCity: ['']));
 
-  constructor() {
     this.roles = [
       { label: "Select Role", value: null },
       { label: "Admin", value: 1 },
